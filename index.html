@@ -55,6 +55,60 @@
       header h1{font-size:2.2rem}
       .title h2{font-size:1.8rem}
     }
+      /* Container to center the button */
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+  }
+
+  /* Button styling */
+  .signup-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 0 rgba(34, 197, 94, 0.6);
+    animation: pulse 2s infinite;
+    transition: all 0.35s ease;
+  }
+
+  /* Hover effects */
+  .signup-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.6);
+    background: linear-gradient(135deg, #16a34a, #15803d);
+  }
+
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(34, 197, 94, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+  }
+
+  /* Mobile full width */
+  @media (max-width: 600px) {
+    .signup-btn {
+      width: 90%;
+      padding: 18px;
+      font-size: 16px;
+    }
+  }
   </style>
 </head>
 <body>
@@ -62,6 +116,17 @@
 <header>
   <h1>EARNTRIX</h1>
   <p>A modern Agency with popular online earning opportunities where users earn in a clear and simple way.</p>
+  <br>
+  
+<div class="signup-container">
+  <a
+    href="https://www.earntrix.com/user/register.php?ref=Wiz25"
+    target="_blank"
+    class="signup-btn">
+    🚀 REGISTER NOW & Get Started
+  </a>
+</div>
+
 </header>
 
 <nav>
